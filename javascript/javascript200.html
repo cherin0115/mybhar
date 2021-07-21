@@ -876,7 +876,32 @@
             table += "</table>";
 
             document.write(table);
+            document.write("<br>");
+
         }
+
+        //sample300 : 테이블 만들기
+        {
+
+        document.write("*** 300. 테이블 만들기2 ***<br>");
+
+        let num = 100;
+        let table = "<table>";
+
+        for( let i=10; i>=1; i-- ){
+            table += "<tr>";
+                for( var j=10; j>=1; j-- ){
+                    table += "<td>"+ num +"</td>";
+                    num--;
+        }
+        table += "</tr>";
+        }
+        table += "</table>";
+
+        document.write(table);
+        }
+
+        
 
 
     </script>

@@ -526,6 +526,31 @@
 
     <hr>
 
+    <div id="sample10" class="sample">
+        <h2>300. 테이블 만들기2<span class="dot"></span></h2>
+        <div class="code">
+            <pre class="line-numbers"><code class="language-js">{
+    let num = 100;
+    let table = "<table>";
+
+    for( let i=10; i>=1; i-- ){
+        table += "<tr>";
+            for( var j=10; j>=1; j-- ){
+                table += "<td>"+ num +"</td>";
+                num--;
+    }
+    table += "</tr>";
+    }
+    table += "</table>";
+
+    document.write(table);
+}
+</code></pre>
+        </div>
+    </div>
+
+    <hr>
+
     <!-- <table>
         <tr>
             <td>1</td>

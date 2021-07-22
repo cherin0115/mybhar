@@ -433,7 +433,21 @@
         <h2>09. 테이블 만들기9<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
+    let num = 1;
+    let table = "&lt;table&gt;";
 
+    for( let i=1; i&lt;=10; i++ ){
+        table += "&lt;tr&gt;";
+            for( var j=1; j&lt;=10; j++ ){
+                if(j % 2 == 0)
+                table += "&lt;td&gt;"+ num +"&lt;/td&gt;";
+                num++;
+    }
+    table += "&lt;/tr&gt;";
+    }
+    table += "&lt;/table&gt;";
+
+    document.write(table);
 }
 </code></pre>
         </div>
@@ -723,6 +737,7 @@
             for( let i=1; i<=10; i++){
                 table += "<tr>";
                     for( var j=1; j<=10; j++){
+                        if(j % 2 == 0)
                         table += "<td>"+ num +"</td>";
                         num++;
                         

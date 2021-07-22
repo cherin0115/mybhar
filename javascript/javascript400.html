@@ -712,17 +712,30 @@
         document.write("<br>");
         }
 
-        //sample08 : 테이블 만들기
+        //sample08 : 테이블 만들기 (짝수)
         {
 
-        document.write("*** 09. 테이블 만들기3 ***<br>");
+        document.write("*** 09. 테이블 만들기3 (짝수) ***<br>");
+        
+        let num = 1
+            let table = "<table>";
 
+            for( let i=1; i<=10; i++){
+                table += "<tr>";
+                    for( var j=1; j<=10; j++){
+                        table += "<td>"+ num +"</td>";
+                        num++;
+                        
+            }
+            table += "</tr>";
         }
+            table += "</table>";
 
-
+            document.write(table);
+            document.write("<br>");
+        }
         
 
-        
     </script>
 </body>
 

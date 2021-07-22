@@ -531,17 +531,17 @@
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
     let num = 100;
-    let table = "<table>";
+    let table = "&lt;table&gt;";
 
     for( let i=10; i>=1; i-- ){
-        table += "<tr>";
+        table += "&lt;tr&gt;";
             for( var j=10; j>=1; j-- ){
-                table += "<td>"+ num +"</td>";
+                table += "&lt;td&gt;"+ num +"&lt;/td&gt;";
                 num--;
     }
-    table += "</tr>";
+    table += "&lt;/tr&gt;";
     }
-    table += "</table>";
+    table += "&lt;/table&gt;";
 
     document.write(table);
 }

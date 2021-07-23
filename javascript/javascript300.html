@@ -273,7 +273,6 @@
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
     function func(){
-        document.write(" *** 01. 선언적 함수 ***");
         document.write("01. 함수가 실행되었습니다");
     }
     func();
@@ -289,7 +288,6 @@
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
     const func = function(){
-        document.write(" *** 02. 익명 함수 ***");
         document.write("02. 함수가 실행되었습니다");
     }
     func();
@@ -305,7 +303,6 @@
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
     function func(str){
-        document.write(" *** 03. 매개변수 함수 ***");
         document.write(str);
     }
     func("함수가 실행되었습니다");
@@ -324,8 +321,6 @@
         const str = "함수가 실행되었습니다.";
         return str;
     }
-
-        document.write("*** 04. 리턴값 함수 ***");
         document.write(func());
 }
 </code></pre>

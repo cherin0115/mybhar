@@ -207,25 +207,32 @@
             margin-top: 20px;
             
         }
-
-        .ol1::before {
-            content: "데이터 저장하기 : ";
-        }
-        
-        .ol2::before {
-            content: "데이터 실행하기 : ";
+        table {
+            border-collapse: collapse;
         }
 
-        .ol3::before {
-            content: "데이터 제어하기 : ";
-        }
-
-        table {border-collapse: collapse;}
         table tr td {
             border: 1px solid #989898;
             padding: 5px;
+            text-align: center;
         }
-    
+
+        .ol1::before {
+            content: "데이터 제어하기 : ";
+        }
+
+        .ol2::before {
+            content: "데이터 불러오기 : ";
+        }
+        
+        .ol3::before {
+            content: "데이터 실행하기 : ";
+        }
+
+        .ol4::before {
+            content: "데이터 제어하기 : ";
+        }
+
     </style>
 </head>
 
@@ -238,9 +245,12 @@
         <li><a href="javascript100.html">객체(object)</a></li>
     </ol>
     <ol class="ol2">
-        <li><a href="javascript300.html">함수(function)</a></li>
+        <li><a href="javascript500.html">데이터</a></li>
     </ol>
     <ol class="ol3">
+        <li><a href="javascript300.html">함수(function)</a></li>
+    </ol>
+    <ol class="ol4">
         <li><a href="javascript200.html">조건문</a></li>
         <li><a href="javascript200.html">반복문</a></li>
     </ol>
@@ -250,15 +260,15 @@
 
     <h2 class="mt20">알고리즘</h2>
     <ul>
-        <li>01. 1부터 100까지 출력하기</li>
-        <li>02. 1부터 100까지 출력하기 : 짝수만</li>
-        <li>03. 1부터 100까지 출력하기 : 5의 배수만</li>
-        <li>04. 1부터 100까지 출력하기 : 짝수는 빨간색, 홀수는 파란색 출력</li>
-        <li>05. 1부터 100까지 합 출력하기</li>
-        <li>06. 구구단 출력하기</li>
-        <li>07. 테이블 만들기1</li>
-        <li>08. 테이블 만들기2</li>
-        <li>09. 테이블 만들기3 - 짝수만</li>
+        <li><a href="#sample1">01. 1부터 100까지 출력하기</a></li>
+        <li><a href="#sample2">02. 1부터 100까지 출력하기 : 짝수만</a></li>
+        <li><a href="#sample3">03. 1부터 100까지 출력하기 : 5의 배수만</a></li>
+        <li><a href="#sample4">04. 1부터 100까지 출력하기 : 짝수는 빨간색, 홀수는 파란색 출력</a></li>
+        <li><a href="#sample5">05. 1부터 100까지 합 출력하기</a></li>
+        <li><a href="#sample6">06. 구구단 출력하기</a></li>
+        <li><a href="#sample7">07. 테이블 만들기1</a></li>
+        <li><a href="#sample8">08. 테이블 만들기2</a></li>
+        <li><a href="#sample9">09. 테이블 만들기3 - 짝수만</a></li>
     </ul>
 
     <hr>
@@ -274,7 +284,7 @@
     }
 
     document.write("<br><br>");
-    }
+}
 </code></pre>
         </div>
     </div>
@@ -296,7 +306,7 @@
 
 
     document.write("<br><br>");
-    }
+}
 </code></pre>
         </div>
     </div>
@@ -443,18 +453,18 @@
     <hr>
 
     <div id="sample9" class="sample">
-        <h2>09. 테이블 만들기9<span class="dot"></span></h2>
+        <h2>09. 테이블 만들기3<span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    let num = 1;
+    let num = 2;
     let table = "&lt;table&gt;";
 
-    for( let i=1; i&lt;=10; i++ ){
+    for( let i=1; i&lt;=10; i++){
         table += "&lt;tr&gt;";
-            for( var j=1; j&lt;=10; j++ ){
-                if(j % 2 == 0)
+            for( var j=1; j&lt;=10; j++){
                 table += "&lt;td&gt;"+ num +"&lt;/td&gt;";
-                num++;
+                num+=2;
+                
     }
     table += "&lt;/tr&gt;";
     }
@@ -744,15 +754,14 @@
 
         document.write("*** 09. 테이블 만들기3 (짝수) ***<br>");
         
-        let num = 1
+        let num = 2;
             let table = "<table>";
 
             for( let i=1; i<=10; i++){
                 table += "<tr>";
                     for( var j=1; j<=10; j++){
-                        if(j % 2 == 0)
                         table += "<td>"+ num +"</td>";
-                        num++;
+                        num+=2;
                         
             }
             table += "</tr>";

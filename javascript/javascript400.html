@@ -282,8 +282,6 @@
     for (let i=1; i&lt;=100; i++){
         document.write(i, "&nbsp;");
     }
-
-    document.write("<br><br>");
 }
 </code></pre>
         </div>
@@ -299,13 +297,8 @@
 
     for (let i=1; i&lt;=100; i++)
     if( i % 2 == 0 ){
-    document.write(i, "&nbsp;");
+        document.write(i, "&nbsp;");
     }
-    // for (let i=2; i&lt;=100; i+=2)
-    // document.write(i, "&nbsp;");
-
-
-    document.write("<br><br>");
 }
 </code></pre>
         </div>
@@ -320,10 +313,9 @@
     document.write("*** 03. for문을 이용해서 화면에 1부터 100까지 출력 (5의 배수만 출력) ***<br>");
 
     for (let i=1; i&lt;=100; i++)
-    if( i % 5 == 0 ){
-    document.write(i, "&nbsp;");
+        if( i % 5 == 0 ){
+            document.write(i, "&nbsp;");
     }
-    document.write("<br><br>");
 }
 </code></pre>
         </div>
@@ -338,11 +330,11 @@
     document.write("*** 04. for문을 이용해서 화면에 1부터 100까지 출력 (짝수는 빨간색, 홀수는 파란색 출력) ***<br>");
 
     for (let i=1; i&lt;=100; i++){
-    if( i % 2 == 0 ){
-    document.write("&lt;span style='color:red'&gt; " + i + " &lt;/span&gt;");
-    } else {
-    document.write("&lt;span style='color:blue'&gt; " + i +" &lt;/span&gt;");
-    }
+        if( i % 2 == 0 ){
+            document.write("&lt;span style='color:red'&gt; " + i + " &lt;/span&gt;");
+        } else {
+            document.write("&lt;span style='color:blue'&gt; " + i +" &lt;/span&gt;");
+        }
     }
 }
 </code></pre>
@@ -360,11 +352,10 @@
     let sum = 0;
 
     for(let i=1; i&lt;=100; i++){
-    //sum = sum + i;
-    sum += i;
+        //sum = sum + i;
+        sum += i;
     }
     document.write(sum);
-
 }
 </code></pre>
         </div>
@@ -391,10 +382,10 @@
     // 2 * 9 = 18;
 
     for(var i=2; i&lt;=9; i++)
-    for(var j=1; j&lt;=9; j++){
-    var sum = i * j;
-    document.write(i + " * " + j + " = " + sum );
-        }
+        for(var j=1; j&lt;=9; j++){
+            var sum = i * j;
+            document.write(i + " * " + j + " = " + sum );
+                }
 }
 </code></pre>
         </div>
@@ -410,16 +401,16 @@
     let table = "&lt;table&gt;";
 
     for( let i=1; i&lt;=10; i++ ){
-    table += "&lt;tr&gt;";
-    for( var j=1; j&lt;=10; j++ ){
-    table += "&lt;td&gt;"+ num +"&lt;/td&gt;";
-    num++;
+        table += "&lt;tr&gt;";
+        for( var j=1; j&lt;=10; j++ ){
+            table += "&lt;td&gt;"+ num +"&lt;/td&gt;";
+            num++;
+        }
+        table += "&lt;/tr&gt;";
     }
-    table += "&lt;/tr&gt;";
-    }
-    table += "&lt;/table&gt;";
+        table += "&lt;/table&gt;";
 
-    document.write(table);
+        document.write(table);
 }
 </code></pre>
         </div>
@@ -434,13 +425,13 @@
     let num = 100;
     let table = "&lt;table&gt;";
 
-    for( let i=10; i>=1; i-- ){
-    table += "&lt;tr&gt;";
-    for( var j=10; j>=1; j-- ){
-    table += "&lt;td&gt;"+ num +"&lt;/td&gt;";
-    num--;
-    }
-    table += "&lt;/tr&gt;";
+        for( let i=10; i>=1; i-- ){
+        table += "&lt;tr&gt;";
+        for( var j=10; j>=1; j-- ){
+            table += "&lt;td&gt;"+ num +"&lt;/td&gt;";
+            num--;
+        }
+        table += "&lt;/tr&gt;";
     }
     table += "&lt;/table&gt;";
 
@@ -460,13 +451,13 @@
     let table = "&lt;table&gt;";
 
     for( let i=1; i&lt;=10; i++){
-    table += "&lt;tr&gt;";
-    for( var j=1; j&lt;=10; j++){
-    table += "&lt;td&gt;"+ num +"&lt;/td&gt;";
-    num+=2;
+        table += "&lt;tr&gt;";
+            for( var j=1; j&lt;=10; j++){
+            table += "&lt;td&gt;"+ num +"&lt;/td&gt;";
+            num+=2;
                 
-    }
-    table += "&lt;/tr&gt;";
+        }
+        table += "&lt;/tr&gt;";
     }
     table += "&lt;/table&gt;";
 

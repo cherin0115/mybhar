@@ -274,11 +274,11 @@
             <pre class="line-numbers"><code class="language-js">{
     //true, false, 1, "1", "", 0, null, undefined, [], {},
     if(true){
-    document.write("*** 01. if문 ***");
-    document.write("조건문이 실행되었습니다.(true)");
+        document.write("*** 01. if문 ***");
+        document.write("조건문이 실행되었습니다.(true)");
     } else {
-    document.write("*** 01. if문 ***");
-    document.write("조건문이 실행되었습니다.(false)");
+        document.write("*** 01. if문 ***");
+        document.write("조건문이 실행되었습니다.(false)");
     }
 }
 </code></pre>
@@ -294,20 +294,20 @@
     let num = 100;
 
     if( num == 90 ){
-    document.write("*** 02. 다중 if문 ***");
-    document.write("조건문이 실행되었습니다.(num == 90)");
+        document.write("*** 02. 다중 if문 ***");
+        document.write("조건문이 실행되었습니다.(num == 90)");
     } else if ( num == 100 ){
-    document.write("*** 02. 다중 if문 ***");
-    document.write("조건문이 실행되었습니다.(num == 100)");
+        document.write("*** 02. 다중 if문 ***");
+        document.write("조건문이 실행되었습니다.(num == 100)");
     } else if ( num == 200 ){
-    document.write("*** 02. 다중 if문 ***");
-    document.write("조건문이 실행되었습니다.(num == 100)");
+        document.write("*** 02. 다중 if문 ***");
+        document.write("조건문이 실행되었습니다.(num == 100)");
     } else if ( num == 300 ){
-    document.write("*** 02. 다중 if문 ***");
-    document.write("조건문이 실행되었습니다.(num == 100)");
+        document.write("*** 02. 다중 if문 ***");
+        document.write("조건문이 실행되었습니다.(num == 100)");
     } else {
-    document.write("*** 02. 다중 if문 ***");
-    document.write("조건문이 실행되었습니다.(num == XX)");
+        document.write("*** 02. 다중 if문 ***");
+        document.write("조건문이 실행되었습니다.(num == XX)");
     }
 }
 </code></pre>
@@ -323,17 +323,17 @@
     let num = 100;
 
     if( num == 100 ){
-    document.write("*** 03. 중첩 if문 ***");
-    document.write("조건문이 실행되었습니다.(1)");
-    if( num == 100 ){
-    document.write("조건문이 실행되었습니다.(2)");
-    if( num == 100 ){
-    document.write("조건문이 실행되었습니다.(3)");
-    }
-    }
+        document.write("*** 03. 중첩 if문 ***");
+            document.write("조건문이 실행되었습니다.(1)");
+            if( num == 100 ){
+                document.write("조건문이 실행되었습니다.(2)");
+                if( num == 100 ){
+                    document.write("조건문이 실행되었습니다.(3)");
+            }
+        }
     } else {
-    document.write("*** 03. 중첩 if문 ***");
-    document.write("조건문이 실행되었습니다.(4)");
+        document.write("*** 03. 중첩 if문 ***");
+        document.write("조건문이 실행되었습니다.(4)");
     }
 }
 </code></pre>
@@ -350,20 +350,20 @@
 
     switch( num ){
     case 100 :
-    document.write("*** 04. switch문 ***");
-    document.write("조건문이 실행되었습니다.(num == 100)");
+        document.write("*** 04. switch문 ***");
+        document.write("조건문이 실행되었습니다.(num == 100)");
     break;
     case 200 :
-    document.write("*** 04. switch문 ***");
-    document.write("조건문이 실행되었습니다.(num == 200)");
+        document.write("*** 04. switch문 ***");
+        document.write("조건문이 실행되었습니다.(num == 200)");
     break;
     case 300 :
-    document.write("*** 04. switch문 ***");
-    document.write("조건문이 실행되었습니다.(num == 300));
+        document.write("*** 04. switch문 ***");
+        document.write("조건문이 실행되었습니다.(num == 300));
     break;
     default :
-    document.write("*** 04. switch문 ***");
-    document.write("조건문이 실행되었습니다.(num == 값이 없음)");
+        document.write("*** 04. switch문 ***");
+        document.write("조건문이 실행되었습니다.(num == 값이 없음)");
     break;
     }
 }
@@ -420,8 +420,8 @@
 
     let num = 1;
     while( num &lt;= 10 ){
-    document.write( num + ". 반복문이 실행되었습니다.");
-    num++;
+        document.write( num + ". 반복문이 실행되었습니다.");
+        num++;
     }
 }
 </code></pre>
@@ -438,8 +438,8 @@
 
     let num = 1;
     do {
-    document.write(num + ". 반복문이 실행되었습니다.");
-    num++;
+        document.write(num + ". 반복문이 실행되었습니다.");
+        num++;
     } while ( num &lt;= 10 );  
 }
 </code></pre>
@@ -459,7 +459,7 @@
     // }
 
     for( let i=1; i&lt;=10; i++ ){
-    document.write(i + ". 반복문이 실행되었습니다.");
+        document.write(i + ". 반복문이 실행되었습니다.");
     }
 }
 </code></pre>
@@ -475,10 +475,10 @@
     document.write("*** 10. 중첩 for문 ***");
 
     for (var i=1; i&lt;=5; i++){
-    document.write(i + ". 반복문(아이)이 실행되었습니다.");
-    for(var j=1; j&lt;=5; j++){
-    document.write(j + ". 반복문(제이)이 실행되었습니다.");
-    }
+        document.write(i + ". 반복문(아이)이 실행되었습니다.");
+        for(var j=1; j&lt;=5; j++){
+            document.write(j + ". 반복문(제이)이 실행되었습니다.");
+        }
     }
 }
 </code></pre>
@@ -504,19 +504,19 @@
 
     // for문
     for (let i=0; i&lt;num.length; i++){
-    document.write(num[1]);
+        document.write(num[1]);
     }
 
     // forEach()
     num.forEach(function(el){
-    document.write(el);
+        document.write(el);
     });
 
     // forEach(element, index, array)
     num.forEach((element, index, array) => {
-    document.write(element);
-    document.write(index);
-    document.write(array);
+        document.write(element);
+        document.write(index);
+        document.write(array);
     });
 }
 
@@ -535,7 +535,7 @@
     const num = [100, 200, 300, 400];
 
     for( let i of num ){
-    document.write( i + " 반복문이 실행되었습니다." );
+        document.write( i + " 반복문이 실행되었습니다." );
     }
 }
 
@@ -555,7 +555,7 @@
     const num = [100, 200, 300, 400];
 
     for( let i in num ){
-    document.write( num[i]);
+        document.write( num[i]);
     }
 
     //객체
@@ -568,8 +568,8 @@
     }
 
     for( let key in obj ){
-    document.write(key);
-    document.write(obj[key]);
+        document.write(key);
+        document.write(obj[key]);
     }
 }
 
@@ -588,19 +588,19 @@
     //while문을 이용해서 1부터 20까지 출력
     let num = 0;
     while( num &lt;20 ){
-    num++;
-    document.write( num );
-    if( num == 10 ){
-    break;
-    }
+        num++;
+        document.write( num );
+        if( num == 10 ){
+            break;
+        }
     }
 
     //for문을 이용해서 1부터 20까지 출력
     for( let i=1; i&lt;=20; i++ ){
-    document.write(i);
-    if( i == 10 ){
-    break;
-    }
+        document.write(i);
+        if( i == 10 ){
+            break;
+        }
     }
 }
 
@@ -618,14 +618,14 @@
 
     let num = 0;
     while( true ){
-    num++;
-    if( num == 3 ){
-    continue;
-    }
-    if( num > 19 ){
-    break;
-    }
-    document.write(num);
+        num++;
+        if( num == 3 ){
+            continue;
+        }
+        if( num > 19 ){
+            break;
+        }
+        document.write(num);
     }
 }
 

@@ -326,15 +326,15 @@
         document.write("*** 03. 중첩 if문 ***");
         document.write("조건문이 실행되었습니다.(1)");
         if( num == 100 ){
-        document.write("조건문이 실행되었습니다.(2)");
-        if( num == 100 ){
-        document.write("조건문이 실행되었습니다.(3)");
+            document.write("조건문이 실행되었습니다.(2)");
+            if( num == 100 ){
+                document.write("조건문이 실행되었습니다.(3)");
+                }
+            }
+        } else {
+        document.write("*** 03. 중첩 if문 ***");
+        document.write("조건문이 실행되었습니다.(4)");
         }
-    }
-    } else {
-    document.write("*** 03. 중첩 if문 ***");
-    document.write("조건문이 실행되었습니다.(4)");
-    }
 }
 </code></pre>
         </div>
@@ -349,23 +349,23 @@
     let num = 100;
 
     switch( num ){
-    case 100 :
+        case 100 :
+            document.write("*** 04. switch문 ***");
+            document.write("조건문이 실행되었습니다.(num == 100)");
+        break;
+        case 200 :
+            document.write("*** 04. switch문 ***");
+            document.write("조건문이 실행되었습니다.(num == 200)");
+        break;
+        case 300 :
+            document.write("*** 04. switch문 ***");
+            document.write("조건문이 실행되었습니다.(num == 300));
+        break;
+        default :
         document.write("*** 04. switch문 ***");
-        document.write("조건문이 실행되었습니다.(num == 100)");
-    break;
-    case 200 :
-        document.write("*** 04. switch문 ***");
-        document.write("조건문이 실행되었습니다.(num == 200)");
-    break;
-    case 300 :
-        document.write("*** 04. switch문 ***");
-        document.write("조건문이 실행되었습니다.(num == 300));
-    break;
-    default :
-    document.write("*** 04. switch문 ***");
-        document.write("조건문이 실행되었습니다.(num == 값이 없음)");
-    break;
-    }
+            document.write("조건문이 실행되었습니다.(num == 값이 없음)");
+        break;
+        }
 }
 </code></pre>
         </div>
@@ -438,8 +438,8 @@
 
     let num = 1;
     do {
-        document.write(num + ". 반복문이 실행되었습니다.");
-        num++;
+    document.write(num + ". 반복문이 실행되었습니다.");
+    num++;
     } while ( num &lt;= 10 );  
 }
 </code></pre>
@@ -459,9 +459,8 @@
     // }
 
     for( let i=1; i&lt;=10; i++ ){
-            document.write(i + ". 반복문이 실행되었습니다.");
+    document.write(i + ". 반복문이 실행되었습니다.");
     }
-
 }
 </code></pre>
         </div>
@@ -476,10 +475,10 @@
     document.write("*** 10. 중첩 for문 ***");
 
     for (var i=1; i&lt;=5; i++){
-            document.write(i + ". 반복문(아이)이 실행되었습니다.");
-            for(var j=1; j&lt;=5; j++){
-            document.write(j + ". 반복문(제이)이 실행되었습니다.");
-            }
+    document.write(i + ". 반복문(아이)이 실행되었습니다.");
+    for(var j=1; j&lt;=5; j++){
+    document.write(j + ". 반복문(제이)이 실행되었습니다.");
+    }
     }
 }
 </code></pre>
@@ -505,19 +504,19 @@
 
     // for문
     for (let i=0; i&lt;num.length; i++){
-        document.write(num[1]);
+    document.write(num[1]);
     }
 
     // forEach()
     num.forEach(function(el){
-        document.write(el);
+    document.write(el);
     });
 
     // forEach(element, index, array)
     num.forEach((element, index, array) => {
-        document.write(element);
-        document.write(index);
-        document.write(array);
+    document.write(element);
+    document.write(index);
+    document.write(array);
     });
 }
 
@@ -556,21 +555,21 @@
     const num = [100, 200, 300, 400];
 
     for( let i in num ){
-        document.write( num[i]);
+    document.write( num[i]);
     }
 
     //객체
     const obj = {
-        a: 100,
-        b: 200,
-        c: 300,
-        d: 400,
-        e: 500,
+    a: 100,
+    b: 200,
+    c: 300,
+    d: 400,
+    e: 500,
     }
 
     for( let key in obj ){
-        document.write(key);
-        document.write(obj[key]);
+    document.write(key);
+    document.write(obj[key]);
     }
 }
 
@@ -589,19 +588,19 @@
     //while문을 이용해서 1부터 20까지 출력
     let num = 0;
     while( num &lt;20 ){
-        num++;
-        document.write( num );
-        if( num == 10 ){
-            break;
-        }
+    num++;
+    document.write( num );
+    if( num == 10 ){
+    break;
+    }
     }
 
     //for문을 이용해서 1부터 20까지 출력
     for( let i=1; i&lt;=20; i++ ){
-        document.write(i);
-        if( i == 10 ){
-            break;
-        }
+    document.write(i);
+    if( i == 10 ){
+        break;
+    }
     }
 }
 
@@ -619,14 +618,14 @@
 
     let num = 0;
     while( true ){
-        num++;
-        if( num == 3 ){
-            continue;
-        }
-        if( num > 19 ){
-            break;
-        }
-        document.write(num)
+    num++;
+    if( num == 3 ){
+        continue;
+    }
+    if( num > 19 ){
+        break;
+    }
+    document.write(num)
     }
 }
 

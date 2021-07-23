@@ -294,20 +294,20 @@
     let num = 100;
 
     if( num == 90 ){
-        document.write("*** 02. 다중 if문 ***");
-        document.write("조건문이 실행되었습니다.(num == 90)");
+    document.write("*** 02. 다중 if문 ***");
+    document.write("조건문이 실행되었습니다.(num == 90)");
     } else if ( num == 100 ){
-        document.write("*** 02. 다중 if문 ***");
-        document.write("조건문이 실행되었습니다.(num == 100)");
+    document.write("*** 02. 다중 if문 ***");
+    document.write("조건문이 실행되었습니다.(num == 100)");
     } else if ( num == 200 ){
-        document.write("*** 02. 다중 if문 ***");
-        document.write("조건문이 실행되었습니다.(num == 100)");
+    document.write("*** 02. 다중 if문 ***");
+    document.write("조건문이 실행되었습니다.(num == 100)");
     } else if ( num == 300 ){
-        document.write("*** 02. 다중 if문 ***");
-        document.write("조건문이 실행되었습니다.(num == 100)");
+    document.write("*** 02. 다중 if문 ***");
+    document.write("조건문이 실행되었습니다.(num == 100)");
     } else {
-        document.write("*** 02. 다중 if문 ***");
-        document.write("조건문이 실행되었습니다.(num == XX)");
+    document.write("*** 02. 다중 if문 ***");
+    document.write("조건문이 실행되었습니다.(num == XX)");
     }
 }
 </code></pre>
@@ -323,18 +323,18 @@
     let num = 100;
 
     if( num == 100 ){
-        document.write("*** 03. 중첩 if문 ***");
-        document.write("조건문이 실행되었습니다.(1)");
+    document.write("*** 03. 중첩 if문 ***");
+    document.write("조건문이 실행되었습니다.(1)");
+    if( num == 100 ){
+        document.write("조건문이 실행되었습니다.(2)");
         if( num == 100 ){
-            document.write("조건문이 실행되었습니다.(2)");
-            if( num == 100 ){
-                document.write("조건문이 실행되었습니다.(3)");
-                }
+            document.write("조건문이 실행되었습니다.(3)");
             }
-        } else {
-        document.write("*** 03. 중첩 if문 ***");
-        document.write("조건문이 실행되었습니다.(4)");
         }
+    } else {
+    document.write("*** 03. 중첩 if문 ***");
+    document.write("조건문이 실행되었습니다.(4)");
+    }
 }
 </code></pre>
         </div>
@@ -349,23 +349,23 @@
     let num = 100;
 
     switch( num ){
-        case 100 :
-            document.write("*** 04. switch문 ***");
-            document.write("조건문이 실행되었습니다.(num == 100)");
-        break;
-        case 200 :
-            document.write("*** 04. switch문 ***");
-            document.write("조건문이 실행되었습니다.(num == 200)");
-        break;
-        case 300 :
-            document.write("*** 04. switch문 ***");
-            document.write("조건문이 실행되었습니다.(num == 300));
-        break;
-        default :
+    case 100 :
         document.write("*** 04. switch문 ***");
-            document.write("조건문이 실행되었습니다.(num == 값이 없음)");
-        break;
-        }
+        document.write("조건문이 실행되었습니다.(num == 100)");
+    break;
+    case 200 :
+        document.write("*** 04. switch문 ***");
+        document.write("조건문이 실행되었습니다.(num == 200)");
+    break;
+    case 300 :
+        document.write("*** 04. switch문 ***");
+        document.write("조건문이 실행되었습니다.(num == 300));
+    break;
+    default :
+    document.write("*** 04. switch문 ***");
+        document.write("조건문이 실행되었습니다.(num == 값이 없음)");
+    break;
+    }
 }
 </code></pre>
         </div>
@@ -618,14 +618,14 @@
 
     let num = 0;
     while( true ){
-        num++;
-        if( num == 3 ){
-            continue;
-        }
-        if( num > 19 ){
-            break;
-        }
-        document.write(num);
+    num++;
+    if( num == 3 ){
+        continue;
+    }
+    if( num > 19 ){
+        break;
+    }
+    document.write(num);
     }
 }
 
